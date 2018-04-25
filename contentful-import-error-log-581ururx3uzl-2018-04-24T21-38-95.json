@@ -1,0 +1,29 @@
+[
+  {
+    "ts": "2018-04-24T20:38:07.410Z",
+    "level": "error",
+    "error": {
+      "name": "AccessTokenInvalid",
+      "data": {
+        "status": 403,
+        "statusText": "Forbidden",
+        "message": "The access token you sent could not be found or is invalid.",
+        "details": {
+        },
+        "request": {
+          "url": "https://api.contentful.com:443/spaces/581ururx3uzl",
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/vnd.contentful.management.v1+json",
+            "X-Contentful-User-Agent": "app contentful.import/6.2.0; sdk contentful-management.js/4.2.0; platform node.js/8.9.4; os macOS/17.5.0;",
+            "Authorization": "Bearer ...3b83b",
+            "user-agent": "node.js/v8.9.4",
+            "Accept-Encoding": "gzip"
+          },
+          "method": "get"
+        },
+        "requestId": "e58b8b0e416f61d6840c3d89a018f767"
+      }
+    }
+  }
+]

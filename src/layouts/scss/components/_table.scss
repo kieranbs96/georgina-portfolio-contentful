@@ -1,0 +1,69 @@
+
+  .table {
+  font-size: 1.4rem;
+
+  .hide-desktop {
+    flex: 0 0 40%;
+    @include desktop {
+      display: none;
+    }
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    width: 100%;
+    margin-bottom: 1rem;
+    border:1px solid $tertiary-text;
+
+    @include desktop {
+      flex-direction: row;
+      margin-bottom: 0;
+      border: 0;
+    }
+
+
+
+    & > * {
+      flex: 1;
+      padding: .5rem;
+      display: flex;
+
+
+      &:not(:last-child) {
+        border-bottom: 1px solid $tertiary-text;
+      }
+
+      @include desktop {
+        border-right: 1px solid $tertiary-text;
+        border-bottom: 1px solid $tertiary-text;
+        &:first-child {
+          border-left: 1px solid $tertiary-text;
+        }
+      }
+
+      &.topic {
+        flex: 0 0 30%;
+      }
+
+      &.provider {
+        flex: 0 0 10%;
+      }
+
+      &.renewal {
+        flex: 0 0 9%;
+      }
+    }
+  }
+
+
+  &__headers {
+    border-top: 1px solid $tertiary-text;
+    display:none;
+
+    @include desktop {
+      display: flex;
+    }
+  }
+}

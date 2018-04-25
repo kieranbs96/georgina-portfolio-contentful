@@ -1,0 +1,136 @@
+.reflection {
+
+  &s {
+    margin-top:2rem;
+  }
+
+  &__content {
+
+    h3 {
+      font-size: 1.9rem;
+    }
+  }
+}
+
+
+.carousel {
+  position:relative;
+
+  .flex {
+    div {
+      display: flex;
+      overflow: hidden;
+    }
+    img {
+      flex: 0 0 33%;
+    }
+  }
+
+  &__dot-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: .5rem;
+  }
+
+
+  &__buttons > * {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    background: none;
+    border: 0;
+    font-size: 3rem;
+    color: #585858;
+    opacity: 0.6;
+    &:hover, &:focus {
+      opacity: 1;
+    }
+
+    &:active {
+      outline: none;
+    }
+  }
+
+  &__back-button {
+    left:.5rem;
+  }
+
+  &__next-button {
+    right: .5rem;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+    display: block;
+    margin: .5rem auto;
+  }
+
+  li {
+    padding-bottom: 35rem !important;
+  }
+}
+
+.Collapsible {
+
+  margin-bottom: .2rem;
+
+  & &:last-child {
+    margin-bottom: 3rem;
+  }
+
+  &__contentOuter {
+    padding: 0 2rem;
+  }
+
+  &__trigger.is-open + &__contentOuter {
+    border: 1px solid #00344c;
+    box-sizing: border-box;
+    padding: 0 2rem;
+  }
+
+  &__trigger {
+    background-color: $color-nmc-pink;
+    padding:1.5rem;
+    width: 100%;
+    color: #fff;
+    display:block;
+    position:relative;
+    transition: all .3s;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+
+    &.is-open {
+      background-color: $color-nmc-blue;
+
+     &::after {
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid #fff;
+     }
+    }
+
+    &.is-closed::after {
+      border-bottom: 10px solid transparent;
+      border-top: 10px solid transparent;
+      border-left: 10px solid #fff;
+      right: 1rem;
+    }
+
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      right: 1.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

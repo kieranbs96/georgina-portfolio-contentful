@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import styles from './blog.module.css'
-import ArticlePreview from '../components/article-preview'
+import ArticlePreview from '../components/article-preview-blog-page'
 
 class BlogIndex extends React.Component {
   render() {
@@ -11,20 +11,20 @@ class BlogIndex extends React.Component {
     const posts = get(this, 'props.data.allContentfulBlogPost.edges')
 
     return (
-      <div style={{ background: '#fff' }}>
+      <div className="blog">
         <Helmet title={siteTitle} />
         <div className="wrapper">
-          <div className={styles.hero}>Blog</div>
+          <div className={styles.hero}><h1>Blog</h1></div>
           <h2 className="section-headline">Recent articles</h2>
-          <ul className="article-list">
+          <div className="blog__article-list">
             {posts.map(({ node }) => {
               return (
-                <li key={node.slug}>
+                <div className="blog__article-preview blog__aotm" key={node.slug}>
                   <ArticlePreview article={node} />
-                </li>
+                </div>
               )
             })}
-          </ul>
+          </div>
         </div>
       </div>
     )

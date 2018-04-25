@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600|Work+Sans:300,400,500,700');
+
+
+html {
+  font-size: 62.5%;
+
+  @include desktop {
+    font-size: 70%;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  font-family: 'Raleway', sans-serif;
+  color: $primary-text;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Work Sans', sans-serif;
+  color: $primary-text;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2.3rem;
+}
+
+h2 {
+  font-size: 2.1rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+.primary {
+  color: $primary-text;
+}
+
+.secondary {
+  color: $secondary-text;
+}
+
+.tertiary {
+  color: $tertiary-text;
+}

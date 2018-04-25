@@ -1,0 +1,14 @@
+.button {
+  text-decoration: none;
+  border: 1px solid currentColor;
+  padding: .5rem 2rem;
+  border-radius: .5rem;
+  color: $color-rcn-blue;
+  font-weight: 500;
+  transition: all .3s;
+  display:inline-block;
+  &:hover {
+    background:$color-rcn-red;
+    color: white;
+  }
+}
