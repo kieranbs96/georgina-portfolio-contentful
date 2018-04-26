@@ -4,7 +4,7 @@ const path = require('path')
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
 
-  return new Promise((resolve, reject) => {
+  const loadBlog = new Promise((resolve, reject) => {
     const blogPost = path.resolve('./src/templates/blog-post.js')
     resolve(
       graphql(
@@ -39,4 +39,34 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       })
     )
   })
+
+  const loadPage = new Promise((resolve, reject) => {
+    graphql(`
+      {
+        allContentfulPage {
+          edges {
+            node {
+              slug
+            }
+          }
+        }
+      }
+    `
+    ).then(result => {
+      result.data.allContentfulPage.edges.map(({ node }) => {
+        createPage({
+          path: `${node.slug}/`,
+          component: path.resolve(`./src/templates/page.js`),
+          context: {
+            slug: node.slug,
+          },
+        })
+      })
+      resolve()
+    })
+  })
+
+
+
+  return Promise.all([loadPage, loadBlog])
 }

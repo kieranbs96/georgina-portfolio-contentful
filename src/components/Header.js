@@ -1,5 +1,5 @@
-import React from 'react';
-import Link from 'gatsby-link';
+import React from 'react'
+import Link from 'gatsby-link'
 
 const Header = () => (
   <header className="header">
@@ -38,6 +38,6 @@ const Header = () => (
       </nav>
     </div>
   </header>
-);
+)
 
-export default Header;
+export default Header

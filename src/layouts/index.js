@@ -1,14 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
+import React from 'react'
+import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import Subfooter from '../components/Subfooter';
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import Subfooter from '../components/Subfooter'
 
 import './scss/main.scss'
-
 
 class Template extends React.Component {
   render() {
@@ -36,8 +35,7 @@ class Template extends React.Component {
                 'Georgina Cross, Registered Nurse, UK, London, Royal College of Nursing, RCN, Nurse, Nursing, KCL, Kings College London',
             },
           ]}
-        >
-        </Helmet>
+        />
         <Header />
         <hr className="decoration" />
         <section className="content h-padding h-center">{children()}</section>

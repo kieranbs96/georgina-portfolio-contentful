@@ -1,5 +1,5 @@
-import React from 'react';
-import Link from 'gatsby-link';
+import React from 'react'
+import Link from 'gatsby-link'
 
 const HomeSidebar = () => (
   <div className="home__sidebar">
@@ -33,7 +33,9 @@ const HomeSidebar = () => (
         <li className="home__sidebar-box-skill-item">Rapport Building</li>
         <li className="home__sidebar-box-skill-item">Initiative</li>
         <li className="home__sidebar-box-skill-item">Professionalism</li>
-        <li className="home__sidebar-box-skill-item">Evidence Based Practice</li>
+        <li className="home__sidebar-box-skill-item">
+          Evidence Based Practice
+        </li>
         <li className="home__sidebar-box-skill-item">Critical Thinking</li>
         <li className="home__sidebar-box-skill-item">Teamwork</li>
         <li className="home__sidebar-box-skill-item">A-E Nursing Assessment</li>
@@ -43,6 +45,6 @@ const HomeSidebar = () => (
       </ul>
     </div>
   </div>
-);
+)
 
-export default HomeSidebar;
+export default HomeSidebar

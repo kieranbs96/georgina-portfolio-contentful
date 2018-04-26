@@ -14,12 +14,17 @@ class BlogIndex extends React.Component {
       <div className="blog">
         <Helmet title={siteTitle} />
         <div className="wrapper">
-          <div className={styles.hero}><h1>Blog</h1></div>
+          <div className={styles.hero}>
+            <h1>Blog</h1>
+          </div>
           <h2 className="section-headline">Recent articles</h2>
           <div className="blog__article-list">
             {posts.map(({ node }) => {
               return (
-                <div className="blog__article-preview blog__aotm" key={node.slug}>
+                <div
+                  className="blog__article-preview blog__aotm"
+                  key={node.slug}
+                >
                   <ArticlePreview article={node} />
                 </div>
               )

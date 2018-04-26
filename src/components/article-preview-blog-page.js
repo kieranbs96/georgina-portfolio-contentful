@@ -5,7 +5,6 @@ import Link from 'gatsby-link'
 export default ({ article }) => (
   <div className="blog__preview-content">
     <div className="blog__preview-left">
-
       <h2 className="blog__article-title">
         <Link to={`/blog/${article.slug}`}>{article.title}</Link>
       </h2>
@@ -17,14 +16,16 @@ export default ({ article }) => (
       />
       <Link to={`/blog/${article.slug}`} className="button secondary">
         See the full article
-        </Link>
+      </Link>
     </div>
     <div className="blog__preview-right">
       <picture>
-        <img src={`${article.heroImage.file.url}?fit=scale&w=350&h=196`} alt="" className="blog__preview-image" />
-        <span className="blog__preview-image-caption tertiary">
-
-        </span>
+        <img
+          src={`${article.heroImage.file.url}?fit=scale&w=350&h=196`}
+          alt=""
+          className="blog__preview-image"
+        />
+        <span className="blog__preview-image-caption tertiary" />
       </picture>
     </div>
   </div>

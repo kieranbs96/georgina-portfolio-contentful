@@ -1,5 +1,5 @@
-import React from 'react';
-import Link from 'gatsby-link';
+import React from 'react'
+import Link from 'gatsby-link'
 
 const Subfooter = () => (
   <div className="subfooter">
@@ -11,6 +11,6 @@ const Subfooter = () => (
       </p>
     </div>
   </div>
-);
+)
 
-export default Subfooter;
+export default Subfooter
