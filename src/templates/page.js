@@ -15,21 +15,21 @@ const renderAst = new rehypeReact({
 class PageTemplate extends React.Component {
   render() {
     const page = get(this.props, 'data.contentfulPage')
-    const siteTitle = get(this.props, 'data.site.siteMetadata.title')
+    const siteTitle = get('data.contentfulPage.title')
 
     return (
       <div style={{ padding: '10px' }}>
-        <Helmet title={`${page.title} | ${siteTitle}`} />
+        <Helmet title={`${page.title} | Georgina Cross`} />
         <div className="wrapper">
 
           <h1 className="section-headline">{page.title}</h1>
-          <div
+          {/* <div
             dangerouslySetInnerHTML={{
-              __html: renderAst(page.body.childMarkdownRemark.html),
+              __html: renderAst(page.body.childMarkdownRemark.htmlAst),
             }}
-          />
+          /> */}
 
-          {/* <div>{renderAst(page.body.childMarkdownRemark.html)}</div> */}
+          <div>{renderAst(page.body.childMarkdownRemark.htmlAst)}</div>
         </div>
       </div>
     )
@@ -45,7 +45,7 @@ query PageBySlug($slug: String!) {
     slug
     body {
       childMarkdownRemark {
-        html
+        htmlAst
       }
     }
   }

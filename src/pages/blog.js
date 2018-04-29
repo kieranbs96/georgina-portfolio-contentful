@@ -7,7 +7,7 @@ import ArticlePreview from '../components/article-preview-blog-page'
 
 class BlogIndex extends React.Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
+    const siteTitle = 'Recent Blog Articles | Georgina Cross';
     const posts = get(this, 'props.data.allContentfulBlogPost.edges')
 
     return (

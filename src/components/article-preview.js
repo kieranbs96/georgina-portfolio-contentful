@@ -14,5 +14,8 @@ export default ({ article }) => (
         __html: article.description.childMarkdownRemark.html,
       }}
     />
+    <Link to={`/blog/${article.slug}`} className="button secondary">
+      See the full article
+    </Link>
   </div>
 )

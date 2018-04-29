@@ -7,16 +7,17 @@ import styles from './blog-post.module.css'
 class BlogPostTemplate extends React.Component {
   render() {
     const post = get(this.props, 'data.contentfulBlogPost')
-    const siteTitle = get(this.props, 'data.site.siteMetadata.title')
+    const siteTitle = get('data.contentfulBlogPost.title')
 
     return (
       <div style={{ padding: '10px' }}>
-        <Helmet title={`${post.title} | ${siteTitle}`} />
+        <Helmet title={`${post.title} | Georgina Cross`} />
         <div className="wrapper">
-          <div className={styles.hero}>
+          <div className="blog__hero">
             <img
               src={`${post.heroImage.file.url}?w=1180&h=400&fit=fill`}
               alt=""
+              className="blog__hero-image"
             />
           </div>
           <h1 className="section-headline">{post.title}</h1>

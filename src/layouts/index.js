@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
+import get from 'lodash/get'
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -19,28 +20,17 @@ class Template extends React.Component {
       rootPath = __PATH_PREFIX__ + `/`
     }
 
+    const posts = get(this, 'props.data.allContentfulBlogPost.edges')
+    console.log(posts)
+
     return (
       <div>
-        <Helmet
-          title="Georgina Cross - Registered Nurse - UK"
-          meta={[
-            {
-              name: 'description',
-              content:
-                'Georgina Cross is a Nurse registered with the Royal College of Nursing and graduated from Kings College London',
-            },
-            {
-              name: 'keywords',
-              content:
-                'Georgina Cross, Registered Nurse, UK, London, Royal College of Nursing, RCN, Nurse, Nursing, KCL, Kings College London',
-            },
-          ]}
-        />
+        <Helmet />
         <Header />
         <hr className="decoration" />
         <section className="content h-padding h-center">{children()}</section>
         <hr className="decoration bottom" />
-        <Footer />
+        <Footer data={posts} />
         <Subfooter />
       </div>
     )
@@ -48,3 +38,36 @@ class Template extends React.Component {
 }
 
 export default Template
+
+export const outerQuery = graphql`
+
+  query OuterQuery {
+    contentfulHome {
+      title
+      body {
+        childMarkdownRemark {
+          html
+        }
+      }
+      mySkills
+    }
+    allContentfulBlogPost(sort: { fields: [publishDate], order: DESC }) {
+      edges {
+        node {
+          title
+          slug
+          heroImage {
+            file {
+              url
+            }
+          }
+          description {
+            childMarkdownRemark {
+              html
+            }
+          }
+        }
+      }
+    }
+  }
+`
