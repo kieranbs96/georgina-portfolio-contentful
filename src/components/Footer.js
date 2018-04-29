@@ -88,13 +88,13 @@ class Footer extends React.Component {
           <div className="footer__column">
             <h4>Recent posts</h4>
             <ul className="footer__list">
-              {data.slice(0, 4).map((i) => {
+              {data.slice(0, 4).map((i) =>
                 <li key={i.node.slug} className="footer__list-item">
                   <Link to={`/blog/${i.node.slug}`} className="footer__item-link">
                     {i.node.title}
                   </Link>
                 </li>
-              })}
+              )}
             </ul>
           </div>
         </div>
