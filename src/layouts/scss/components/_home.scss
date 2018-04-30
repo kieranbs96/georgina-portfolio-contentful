@@ -109,8 +109,9 @@
     display:flex;
     justify-content: space-between;
     flex-wrap:wrap;
+
     & > div {
-      flex: 0 0 32%;
+      flex: 0 0 100%;
       margin-bottom: 1.5rem;
 
       font-size: 1.3rem;
@@ -120,6 +121,10 @@
       padding: .8rem;
       padding-bottom: 4.3rem;
       position: relative;
+
+      @include tablet {
+        flex: 0 0 32%;
+      }
     }
 
     .button {
