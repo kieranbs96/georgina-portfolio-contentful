@@ -3,7 +3,20 @@ const contentfulConfig = require('./.contentful')
 module.exports = {
   pathPrefix: '/gatsby-contentful-starter',
   plugins: [
-    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          'gatsby-remark-sub-sup',
+          {
+            resolve: 'gatsby-remark-responsive-image',
+            options: {
+              maxWidth: 790
+            }
+          }
+        ],
+      },
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     'gatsby-plugin-sharp',

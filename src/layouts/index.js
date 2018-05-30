@@ -21,7 +21,6 @@ class Template extends React.Component {
     }
 
     const posts = get(this, 'props.data.allContentfulBlogPost.edges')
-    console.log(posts)
 
     return (
       <div>
