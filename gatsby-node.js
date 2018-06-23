@@ -15,6 +15,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                 node {
                   title
                   slug
+                  tags
                 }
               }
             }

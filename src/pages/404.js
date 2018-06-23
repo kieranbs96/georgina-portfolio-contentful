@@ -14,7 +14,7 @@ class FourOhFour extends React.Component {
           <p className="404">
             Oh no! 😢 This page was not found.
             <br />
-            <Link to="https://www.georginacross.co.uk">
+            <Link to="/">
               Here's a link to my homepage
             </Link>
           </p>

@@ -22,7 +22,7 @@ class BlogIndex extends React.Component {
             {posts.map(({ node }) => {
               return (
                 <div
-                  className="blog__article-preview blog__aotm"
+                  className={`blog__article-preview ${(node.tags === null) ? `` : `blog__${node.tags}`}`}
                   key={node.slug}
                 >
                   <ArticlePreview article={node} />
@@ -40,25 +40,25 @@ export default BlogIndex
 
 export const pageQuery = graphql`
   query BlogIndexQuery {
-    allContentfulBlogPost(sort: { fields: [publishDate], order: DESC }) {
-      edges {
-        node {
-          title
-          slug
-          publishDate(formatString: "MMMM Do, YYYY")
-          tags
+                allContentfulBlogPost(sort: { fields: [publishDate], order: DESC }) {
+                  edges {
+                    node {
+                      title
+                      slug
+                      publishDate(formatString: "MMMM Do, YYYY")
+  tags
           heroImage {
-            file {
-              url
-            }
+              file {
+            url
           }
+        }
           description {
-            childMarkdownRemark {
-              html
-            }
+              childMarkdownRemark {
+            html
           }
         }
       }
     }
   }
+}
 `

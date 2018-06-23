@@ -24,7 +24,9 @@ class Template extends React.Component {
 
     return (
       <div>
-        <Helmet />
+        <Helmet>
+          <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        </Helmet>
         <Header />
         <hr className="decoration" />
         <section className="content h-padding h-center">{children()}</section>
