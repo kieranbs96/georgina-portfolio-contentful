@@ -1,13 +1,23 @@
 const contentfulConfig = require('./.contentful')
 
 module.exports = {
+  siteMetadata: {
+    title: `Georgina Cross`,
+    siteUrl: 'https://georginacross.co.uk',
+    description: 'Georgina Cross - Registered Nurse',
+  },
   pathPrefix: '/gatsby-contentful-starter',
   plugins: [
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `#014990`,
+      },
+    },
     {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-          'gatsby-remark-sub-sup',
           {
             resolve: 'gatsby-remark-responsive-image',
             options: {

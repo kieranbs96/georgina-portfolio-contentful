@@ -1,16 +1,20 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
-import get from 'lodash/get'
-import styles from './blog-post.module.css'
+import { graphql, Link } from 'gatsby';
+import get from 'lodash/get';
+import rehypeReact from 'rehype-react';
+
+const renderAst = new rehypeReact({
+  createElement: React.createElement,
+  components: { 'react-link': Link },
+}).Compiler;
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = get(this.props, 'data.contentfulBlogPost')
-    const siteTitle = get('data.contentfulBlogPost.title')
 
     return (
-      <div style={{ padding: '10px' }}>
+      <div style={{ background: 'white', padding: '2.5rem', boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px' }}>
         <Helmet title={`${post.title} | Georgina Cross`} />
         <div className="wrapper">
           <div className="blog__hero">
@@ -30,7 +34,7 @@ class BlogPostTemplate extends React.Component {
           </p>
           <div
             dangerouslySetInnerHTML={{
-              __html: post.body.childMarkdownRemark.html,
+              __html: renderAst(post.body.childMarkdownRemark.htmlAst),
             }}
           />
         </div>
@@ -53,7 +57,7 @@ export const pageQuery = graphql`
       }
       body {
         childMarkdownRemark {
-          html
+          htmlAst
         }
       }
     }

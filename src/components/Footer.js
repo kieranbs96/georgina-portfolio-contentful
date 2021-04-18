@@ -1,19 +1,39 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import Link from 'gatsby-link';
+import { FaLinkedin } from 'react-icons/fa';
+import ResearchGate from '../assets/img/footer1.png';
+import CompaniesHouse from '../assets/img/footer2.png';
+import KCLSU from '../assets/img/footer3.png';
 
-import FontAwesomeIcon from '@fortawesome/react-fontawesome'
-import brands from '@fortawesome/fontawesome-free-brands'
-import faLinkedIn from '@fortawesome/fontawesome-free-brands/faLinkedin'
+export default function Footer() {
 
-import ResearchGate from '../img/footer1.png'
-import CompaniesHouse from '../img/footer2.png'
-import KCLSU from '../img/footer3.png'
-
-class Footer extends React.Component {
-  render() {
-    const data = this.props.data
-
-    return (
+  return (
+    <StaticQuery
+    query={graphql`
+      query FooterQuery {
+        allContentfulBlogPost(sort: { fields: [publishDate], order: DESC }) {
+          edges {
+            node {
+              title
+              slug
+              id
+              heroImage {
+                file {
+                  url
+                }
+              }
+              description {
+                childMarkdownRemark {
+                  html
+                }
+              }
+            }
+          }
+        }
+      }
+    `}
+    render={data => (
       <footer className="footer">
         <div className="container h-padding h-center">
           <div className="footer__column">
@@ -26,7 +46,7 @@ class Footer extends React.Component {
                   href="//www.linkedin.com/in/georgina-cross-43aab790/"
                   className="footer__social-link"
                 >
-                  <FontAwesomeIcon icon={faLinkedIn} />
+                  <FaLinkedin />
                 </a>
               </div>
               <div className="footer__social-item">
@@ -88,10 +108,10 @@ class Footer extends React.Component {
           <div className="footer__column">
             <h4>Recent posts</h4>
             <ul className="footer__list">
-              {data.slice(0, 4).map((i) =>
-                <li key={i.node.slug} className="footer__list-item">
-                  <Link to={`/blog/${i.node.slug}`} className="footer__item-link">
-                    {i.node.title}
+              {data?.allContentfulBlogPost.edges.slice(0, 4).map((post) =>
+                <li key={post.node.slug} className="footer__list-item">
+                  <Link to={`/blog/${post.node.slug}`} key={post.node.id} className="footer__item-link">
+                    {post.node.title}
                   </Link>
                 </li>
               )}
@@ -99,8 +119,8 @@ class Footer extends React.Component {
           </div>
         </div>
       </footer>
-    )
-  }
+    )}
+    />
+  )
 }
 
-export default Footer

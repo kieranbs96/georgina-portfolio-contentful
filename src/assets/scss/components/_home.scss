@@ -106,25 +106,29 @@
 
 
   .article-list {
-    display:flex;
-    justify-content: space-between;
-    flex-wrap:wrap;
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: 1fr;
+
+    @media (min-width: 450px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include tablet {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+
 
     & > div {
-      flex: 0 0 100%;
-      margin-bottom: 1.5rem;
 
       font-size: 1.3rem;
 
       background: white;
       box-shadow: 0 2px 6px hsla(0, 0%, 0, 0.2);
-      padding: .8rem;
+      padding: 1.5rem;
       padding-bottom: 4.3rem;
       position: relative;
-
-      @include tablet {
-        flex: 0 0 32%;
-      }
     }
 
     .button {

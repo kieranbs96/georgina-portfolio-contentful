@@ -1,9 +1,8 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
-import styles from './blog.module.css'
-import ArticlePreview from '../components/article-preview-blog-page'
+import React from 'react';
+import get from 'lodash/get';
+import Helmet from 'react-helmet';
+import { graphql } from 'gatsby';
+import ArticlePreviewBlogPage from '../components/ArticlePreviewBlogPage';
 
 class BlogIndex extends React.Component {
   render() {
@@ -11,10 +10,11 @@ class BlogIndex extends React.Component {
     const posts = get(this, 'props.data.allContentfulBlogPost.edges')
 
     return (
+
       <div className="blog">
         <Helmet title={siteTitle} />
         <div className="wrapper">
-          <div className={styles.hero}>
+          <div>
             <h1>Blog</h1>
           </div>
           <h2 className="section-headline">Recent articles</h2>
@@ -25,13 +25,14 @@ class BlogIndex extends React.Component {
                   className={`blog__article-preview ${(node.tags === null) ? `` : `blog__${node.tags}`}`}
                   key={node.slug}
                 >
-                  <ArticlePreview article={node} />
+                  <ArticlePreviewBlogPage article={node} />
                 </div>
               )
             })}
           </div>
         </div>
       </div>
+
     )
   }
 }
