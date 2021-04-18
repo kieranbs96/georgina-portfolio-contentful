@@ -1,13 +1,8 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import get from 'lodash/get';
-import rehypeReact from 'rehype-react';
 
-const renderAst = new rehypeReact({
-  createElement: React.createElement,
-  components: { 'react-link': Link },
-}).Compiler;
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -34,7 +29,7 @@ class BlogPostTemplate extends React.Component {
           </p>
           <div
             dangerouslySetInnerHTML={{
-              __html: renderAst(post.body.childMarkdownRemark.htmlAst),
+              __html: post.body.childMarkdownRemark.html,
             }}
           />
         </div>
@@ -57,7 +52,7 @@ export const pageQuery = graphql`
       }
       body {
         childMarkdownRemark {
-          htmlAst
+          html
         }
       }
     }

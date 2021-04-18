@@ -6,7 +6,6 @@ module.exports = {
     siteUrl: 'https://georginacross.co.uk',
     description: 'Georgina Cross - Registered Nurse',
   },
-  pathPrefix: '/gatsby-contentful-starter',
   plugins: [
     {
       resolve: `gatsby-plugin-nprogress`,
@@ -16,16 +15,6 @@ module.exports = {
     },
     {
       resolve: 'gatsby-transformer-remark',
-      options: {
-        plugins: [
-          {
-            resolve: 'gatsby-remark-responsive-image',
-            options: {
-              maxWidth: 790
-            }
-          }
-        ],
-      },
     },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
@@ -41,9 +30,7 @@ module.exports = {
     },
     {
       resolve: 'gatsby-source-contentful',
-      options: process.env.NODE_ENV === 'development' ?
-        contentfulConfig.development :
-        contentfulConfig.production
+      options: contentfulConfig.production
     },
   ],
 }
