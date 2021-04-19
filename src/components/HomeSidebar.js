@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 export default function HomeSidebar({ data }) {
-  const home = data
+  const home = data;
 
   return (
     <div className="home__sidebar">
@@ -36,10 +36,11 @@ export default function HomeSidebar({ data }) {
               <li className="home__sidebar-box-skill-item" key={i}>
                 {i}
               </li>
-            )
+            );
           })}
         </ul>
       </div>
+      <iframe src="https://open.spotify.com/embed/playlist/1oc8kUxQtscHVIu59LhNA1" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media" />
     </div>
-  )
+  );
 }
