@@ -5,28 +5,11 @@
   border-radius: .5rem;
   color: $color-rcn-blue;
   font-weight: 500;
-  transition: .3s;
+  transition: .4s;
   display:inline-block;
   &:hover {
     // background:$color-rcn-red;
     color: white;
-    box-shadow: inset 13em 0 0 0 $color-rcn-red;
+    box-shadow: inset 20em 0 0 0 $color-rcn-red;
   }
-
-
-  // background: none;
-  // border: 2px solid;
-  // font: inherit;
-  // line-height: 1;
-  // margin: 0.5em;
-  // padding: 1em 2em;
-  // transition: 0.25s;
-  // -webkit-appearance: button;
-
-  // &:hover, &:focus {
-  //   border-color: $color-nmc-blue;
-  //   color: #fff;
-
-  //   box-shadow: inset 6.5em 0 0 0 $color-nmc-blue;
-  // }
 }
