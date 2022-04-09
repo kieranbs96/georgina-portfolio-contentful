@@ -4083,7 +4083,7 @@ css-select@^2.0.0, css-select@^2.0.2:
     domutils "^1.7.0"
     nth-check "^1.0.2"
 
-css-selector-parser@^1.0.0, css-selector-parser@^1.1.0:
+css-selector-parser@^1.0.0:
   version "1.4.1"
   resolved "https://npmregistry.ef.com/css-selector-parser/-/css-selector-parser-1.4.1.tgz#03f9cb8a81c3e5ab2c51684557d5aaf6d2569759"
   integrity sha512-HYPSb7y/Z7BNDCOrakL4raGO2zltZkbeXyAd6Tg9obzix6QhzxCotdBl6VT0Dv4vZfJGVz3WL/xaEI9Ly3ul0g==
@@ -6353,30 +6353,6 @@ gatsby-remark-a11y-emoji@^1.1.1:
     emoji-regex "^9.0.0"
     gemoji "^6.0.0"
 
-gatsby-remark-jsx@^0.0.3:
-  version "0.0.3"
-  resolved "https://npmregistry.ef.com/gatsby-remark-jsx/-/gatsby-remark-jsx-0.0.3.tgz#a895b215b71e5c083f87a9a6dcb586a2ab8d8562"
-  integrity sha512-Ze50MUTTIDZmr7iKsTkSWn4PSkHtt464IfJtvAQ9xvZvnRY42tErpi7+yMQ9sQEp3P4v5jWTrumEwBJeMJhDvA==
-  dependencies:
-    graphql "^0.13.1"
-
-gatsby-remark-responsive-image@^1.0.0-alpha13-alpha.435e0178:
-  version "1.0.0-alpha13-alpha.435e0178"
-  resolved "https://npmregistry.ef.com/gatsby-remark-responsive-image/-/gatsby-remark-responsive-image-1.0.0-alpha13-alpha.435e0178.tgz#dc6d2995de371d86ef279a2f444efd46133f70ca"
-  integrity sha1-3G0pld43HYbvJ5ovRE79RhM/cMo=
-  dependencies:
-    image-size "^0.5.1"
-    is-relative-url "^2.0.0"
-    lodash "^4.17.4"
-    unist-util-select "^1.5.0"
-
-gatsby-remark-sub-sup@^1.0.0:
-  version "1.0.0"
-  resolved "https://npmregistry.ef.com/gatsby-remark-sub-sup/-/gatsby-remark-sub-sup-1.0.0.tgz#18fddeb5dde62c939e06c6cd2f107ba4f60a1499"
-  integrity sha1-GP3etd3mLJOeBsbNLxB7pPYKFJk=
-  dependencies:
-    remark-sub-super "^1.0.11"
-
 gatsby-source-contentful@^5.3.0:
   version "5.3.0"
   resolved "https://npmregistry.ef.com/gatsby-source-contentful/-/gatsby-source-contentful-5.3.0.tgz#02dc6d8c7678c405307c97e4b0b5aea512c3180a"
@@ -7047,13 +7023,6 @@ graphql-ws@4.2.2:
   resolved "https://npmregistry.ef.com/graphql-ws/-/graphql-ws-4.2.2.tgz#73ede40c064fe76c48c6869df7fc0bfbef80cc20"
   integrity sha512-b6TLtWLAmKunD72muL9EeItRGpio9+V3Cx4zJsBkRA+3wxzTWXDvQr9/3qSwJ3D/2abz0ys2KHTM6lB1uH7KIQ==
 
-graphql@^0.13.1:
-  version "0.13.2"
-  resolved "https://npmregistry.ef.com/graphql/-/graphql-0.13.2.tgz#4c740ae3c222823e7004096f832e7b93b2108270"
-  integrity sha512-QZ5BL8ZO/B20VA8APauGBg3GyEgZ19eduvpLWoq5x7gMmWnHoy8rlQWPLmWgFvo1yNgjSEFMesmS4R6pPr7xog==
-  dependencies:
-    iterall "^1.2.1"
-
 graphql@^15.4.0:
   version "15.5.0"
   resolved "https://npmregistry.ef.com/graphql/-/graphql-15.5.0.tgz#39d19494dbe69d1ea719915b578bf920344a69d5"
@@ -7505,11 +7474,6 @@ image-q@^1.1.1:
   version "1.1.1"
   resolved "https://npmregistry.ef.com/image-q/-/image-q-1.1.1.tgz#fc84099664460b90ca862d9300b6bfbbbfbf8056"
   integrity sha1-/IQJlmRGC5DKhi2TALa/u7+/gFY=
-
-image-size@^0.5.1:
-  version "0.5.5"
-  resolved "https://npmregistry.ef.com/image-size/-/image-size-0.5.5.tgz#09dfd4ab9d20e29eb1c3e80b8990378df9e3cb9c"
-  integrity sha1-Cd/Uq50g4p6xw+gLiZA3jfnjy5w=
 
 imagemin-mozjpeg@^9.0.0:
   version "9.0.0"
@@ -8153,13 +8117,6 @@ is-regex@^1.0.4, is-regex@^1.1.1, is-regex@^1.1.2:
     call-bind "^1.0.2"
     has-symbols "^1.0.1"
 
-is-relative-url@^2.0.0:
-  version "2.0.0"
-  resolved "https://npmregistry.ef.com/is-relative-url/-/is-relative-url-2.0.0.tgz#72902d7fe04b3d4792e7db15f9db84b7204c9cef"
-  integrity sha1-cpAtf+BLPUeS59sV+duEtyBMnO8=
-  dependencies:
-    is-absolute-url "^2.0.0"
-
 is-relative-url@^3.0.0:
   version "3.0.0"
   resolved "https://npmregistry.ef.com/is-relative-url/-/is-relative-url-3.0.0.tgz#f623c8e26baa5bd3742b3b7ec074f50f3b45b3f3"
@@ -8362,7 +8319,7 @@ isurl@^1.0.0-alpha5:
     has-to-string-tag-x "^1.2.0"
     is-object "^1.0.1"
 
-iterall@^1.2.1, iterall@^1.3.0:
+iterall@^1.3.0:
   version "1.3.0"
   resolved "https://npmregistry.ef.com/iterall/-/iterall-1.3.0.tgz#afcb08492e2915cbd8a0884eb93a8c94d0d72fea"
   integrity sha512-QZ9qOMdF+QLHxy1QIpUHUU1D5pS2CG2P69LF6L6CPjPYA/XMOmKV3PZpawHoAjHNyB0swdVTRxdYT4tbBbxqwg==
@@ -9651,9 +9608,9 @@ mkdirp@^1.0.3, mkdirp@^1.0.4:
   integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
 
 moment@^2.18.1, moment@^2.22.2, moment@^2.27.0:
-  version "2.29.1"
-  resolved "https://npmregistry.ef.com/moment/-/moment-2.29.1.tgz#b2be769fa31940be9eeea6469c075e35006fa3d3"
-  integrity sha512-kHmoybcPV8Sqy59DwNDY3Jefr64lK/by/da0ViFcuA4DH0vQg5Q6Ze5VimxkfQNSC+Mls/Kx53s7TjP1RhFEDQ==
+  version "2.29.2"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.2.tgz#00910c60b20843bcba52d37d58c628b47b1f20e4"
+  integrity sha512-UgzG4rvxYpN15jgCmVJwac49h9ly9NurikMWGPdVxm8GZD6XjkKPxDTjQQ43gtGgnV3X0cAyWDdP2Wexoquifg==
 
 mozjpeg@^7.0.0:
   version "7.0.0"
@@ -9936,7 +9893,7 @@ nprogress@^0.2.0:
   resolved "https://npmregistry.ef.com/nprogress/-/nprogress-0.2.0.tgz#cb8f34c53213d895723fcbab907e9422adbcafb1"
   integrity sha1-y480xTIT2JVyP8urkH6UIq28r7E=
 
-nth-check@^1.0.1, nth-check@^1.0.2:
+nth-check@^1.0.2:
   version "1.0.2"
   resolved "https://npmregistry.ef.com/nth-check/-/nth-check-1.0.2.tgz#b2bd295c37e3dd58a3bf0700376663ba4d9cf05c"
   integrity sha512-WeBOdju8SnzPN5vTUJYxYUxLeXpCaVP5i5e0LF8fg7WORF2Wd7wFX/pk0tYZk7s8T+J7VLy0Da6J1+wCT0AtHg==
@@ -11889,11 +11846,6 @@ remark-stringify@^9.0.0, remark-stringify@^9.0.1:
   dependencies:
     mdast-util-to-markdown "^0.6.0"
 
-remark-sub-super@^1.0.11:
-  version "1.0.20"
-  resolved "https://npmregistry.ef.com/remark-sub-super/-/remark-sub-super-1.0.20.tgz#1e198c2e9e335ce414f23429f7b8eae8fef8e469"
-  integrity sha512-ohnGWuB8FSvod8Qp+gEo/7QRDlI2RA8d+YyY4eLuMQPD3WGwqGMCuyWdNOSW0mzDMqse82PJqeke/GGXaj795A==
-
 remark@^13.0.0:
   version "13.0.0"
   resolved "https://npmregistry.ef.com/remark/-/remark-13.0.0.tgz#d15d9bf71a402f40287ebe36067b66d54868e425"
@@ -13765,15 +13717,6 @@ unist-util-remove@^2.0.0:
   integrity sha512-J8NYPyBm4baYLdCbjmf1bhPu45Cr1MWTm77qd9istEkzWpnN6O9tMsEbB2JhNnBCqGENRqEWomQ+He6au0B27Q==
   dependencies:
     unist-util-is "^4.0.0"
-
-unist-util-select@^1.5.0:
-  version "1.5.0"
-  resolved "https://npmregistry.ef.com/unist-util-select/-/unist-util-select-1.5.0.tgz#a93c2be8c0f653827803b81331adec2aa24cd933"
-  integrity sha1-qTwr6MD2U4J4A7gTMa3sKqJM2TM=
-  dependencies:
-    css-selector-parser "^1.1.0"
-    debug "^2.2.0"
-    nth-check "^1.0.1"
 
 unist-util-select@^3.0.4:
   version "3.0.4"
