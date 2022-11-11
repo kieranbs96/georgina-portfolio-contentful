@@ -1703,9 +1703,9 @@
   integrity sha512-htRqZr5qn8EzMelhX/Xmx142z218lLyGaeZ3YR8jlze4TATRU9huKKvuBmAJEW4LCC4pnY1N6JAm6p85fMHjhg==
 
 "@types/component-emitter@^1.2.10":
-  version "1.2.10"
-  resolved "https://npmregistry.ef.com/@types%2fcomponent-emitter/-/component-emitter-1.2.10.tgz#ef5b1589b9f16544642e473db5ea5639107ef3ea"
-  integrity sha512-bsjleuRKWmGqajMerkzox19aGbscQX5rmmvvXl3wlIp5gMG1HgkiwPxsN5p070fBDKTNSPgojVbuY1+HWMbFhg==
+  version "1.2.11"
+  resolved "https://registry.yarnpkg.com/@types/component-emitter/-/component-emitter-1.2.11.tgz#50d47d42b347253817a39709fef03ce66a108506"
+  integrity sha512-SRXjM+tfsSlA9VuG8hGO2nft2p8zjXCK1VcC6N4NXbBbYbSia9kzCChYQajIjzIqOOOuh5Ock6MmV2oux4jDZQ==
 
 "@types/configstore@^2.1.1":
   version "2.1.1"
@@ -3679,7 +3679,7 @@ commondir@^1.0.1:
 
 component-emitter@^1.2.1, component-emitter@~1.3.0:
   version "1.3.0"
-  resolved "https://npmregistry.ef.com/component-emitter/-/component-emitter-1.3.0.tgz#16e4070fba8ae29b679f2215853ee181ab2eabc0"
+  resolved "https://registry.yarnpkg.com/component-emitter/-/component-emitter-1.3.0.tgz#16e4070fba8ae29b679f2215853ee181ab2eabc0"
   integrity sha512-Rd3se6QB+sO1TwqZjscQrurpEPIfO0/yYnSin6Q/rD3mOutHvUrCAhJub3r90uNb+SESBuE0QYoB90YdfatsRg==
 
 compose-function@3.0.3:
@@ -4083,7 +4083,7 @@ css-select@^2.0.0, css-select@^2.0.2:
     domutils "^1.7.0"
     nth-check "^1.0.2"
 
-css-selector-parser@^1.0.0, css-selector-parser@^1.1.0:
+css-selector-parser@^1.0.0:
   version "1.4.1"
   resolved "https://npmregistry.ef.com/css-selector-parser/-/css-selector-parser-1.4.1.tgz#03f9cb8a81c3e5ab2c51684557d5aaf6d2569759"
   integrity sha512-HYPSb7y/Z7BNDCOrakL4raGO2zltZkbeXyAd6Tg9obzix6QhzxCotdBl6VT0Dv4vZfJGVz3WL/xaEI9Ly3ul0g==
@@ -4264,9 +4264,9 @@ debug@^3.0.0, debug@^3.1.0, debug@^3.1.1, debug@^3.2.6, debug@^3.2.7:
     ms "^2.1.1"
 
 debug@^4.0.0, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@~4.3.1:
-  version "4.3.1"
-  resolved "https://npmregistry.ef.com/debug/-/debug-4.3.1.tgz#f0d229c505e0c6d8c49ac553d1b13dc183f6b2ee"
-  integrity sha512-doEwdvm4PCeK4K3RQN2ZC2BYUBaxwLARCqZmMjtF8a51J2Rb0xpVloFRnCODwqjpwnAoao4pelN8l3RJdv3gRQ==
+  version "4.3.4"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.4.tgz#1319f6579357f2338d3337d2cdd4914bb5dcc865"
+  integrity sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==
   dependencies:
     ms "2.1.2"
 
@@ -6353,30 +6353,6 @@ gatsby-remark-a11y-emoji@^1.1.1:
     emoji-regex "^9.0.0"
     gemoji "^6.0.0"
 
-gatsby-remark-jsx@^0.0.3:
-  version "0.0.3"
-  resolved "https://npmregistry.ef.com/gatsby-remark-jsx/-/gatsby-remark-jsx-0.0.3.tgz#a895b215b71e5c083f87a9a6dcb586a2ab8d8562"
-  integrity sha512-Ze50MUTTIDZmr7iKsTkSWn4PSkHtt464IfJtvAQ9xvZvnRY42tErpi7+yMQ9sQEp3P4v5jWTrumEwBJeMJhDvA==
-  dependencies:
-    graphql "^0.13.1"
-
-gatsby-remark-responsive-image@^1.0.0-alpha13-alpha.435e0178:
-  version "1.0.0-alpha13-alpha.435e0178"
-  resolved "https://npmregistry.ef.com/gatsby-remark-responsive-image/-/gatsby-remark-responsive-image-1.0.0-alpha13-alpha.435e0178.tgz#dc6d2995de371d86ef279a2f444efd46133f70ca"
-  integrity sha1-3G0pld43HYbvJ5ovRE79RhM/cMo=
-  dependencies:
-    image-size "^0.5.1"
-    is-relative-url "^2.0.0"
-    lodash "^4.17.4"
-    unist-util-select "^1.5.0"
-
-gatsby-remark-sub-sup@^1.0.0:
-  version "1.0.0"
-  resolved "https://npmregistry.ef.com/gatsby-remark-sub-sup/-/gatsby-remark-sub-sup-1.0.0.tgz#18fddeb5dde62c939e06c6cd2f107ba4f60a1499"
-  integrity sha1-GP3etd3mLJOeBsbNLxB7pPYKFJk=
-  dependencies:
-    remark-sub-super "^1.0.11"
-
 gatsby-source-contentful@^5.3.0:
   version "5.3.0"
   resolved "https://npmregistry.ef.com/gatsby-source-contentful/-/gatsby-source-contentful-5.3.0.tgz#02dc6d8c7678c405307c97e4b0b5aea512c3180a"
@@ -7047,13 +7023,6 @@ graphql-ws@4.2.2:
   resolved "https://npmregistry.ef.com/graphql-ws/-/graphql-ws-4.2.2.tgz#73ede40c064fe76c48c6869df7fc0bfbef80cc20"
   integrity sha512-b6TLtWLAmKunD72muL9EeItRGpio9+V3Cx4zJsBkRA+3wxzTWXDvQr9/3qSwJ3D/2abz0ys2KHTM6lB1uH7KIQ==
 
-graphql@^0.13.1:
-  version "0.13.2"
-  resolved "https://npmregistry.ef.com/graphql/-/graphql-0.13.2.tgz#4c740ae3c222823e7004096f832e7b93b2108270"
-  integrity sha512-QZ5BL8ZO/B20VA8APauGBg3GyEgZ19eduvpLWoq5x7gMmWnHoy8rlQWPLmWgFvo1yNgjSEFMesmS4R6pPr7xog==
-  dependencies:
-    iterall "^1.2.1"
-
 graphql@^15.4.0:
   version "15.5.0"
   resolved "https://npmregistry.ef.com/graphql/-/graphql-15.5.0.tgz#39d19494dbe69d1ea719915b578bf920344a69d5"
@@ -7505,11 +7474,6 @@ image-q@^1.1.1:
   version "1.1.1"
   resolved "https://npmregistry.ef.com/image-q/-/image-q-1.1.1.tgz#fc84099664460b90ca862d9300b6bfbbbfbf8056"
   integrity sha1-/IQJlmRGC5DKhi2TALa/u7+/gFY=
-
-image-size@^0.5.1:
-  version "0.5.5"
-  resolved "https://npmregistry.ef.com/image-size/-/image-size-0.5.5.tgz#09dfd4ab9d20e29eb1c3e80b8990378df9e3cb9c"
-  integrity sha1-Cd/Uq50g4p6xw+gLiZA3jfnjy5w=
 
 imagemin-mozjpeg@^9.0.0:
   version "9.0.0"
@@ -8153,13 +8117,6 @@ is-regex@^1.0.4, is-regex@^1.1.1, is-regex@^1.1.2:
     call-bind "^1.0.2"
     has-symbols "^1.0.1"
 
-is-relative-url@^2.0.0:
-  version "2.0.0"
-  resolved "https://npmregistry.ef.com/is-relative-url/-/is-relative-url-2.0.0.tgz#72902d7fe04b3d4792e7db15f9db84b7204c9cef"
-  integrity sha1-cpAtf+BLPUeS59sV+duEtyBMnO8=
-  dependencies:
-    is-absolute-url "^2.0.0"
-
 is-relative-url@^3.0.0:
   version "3.0.0"
   resolved "https://npmregistry.ef.com/is-relative-url/-/is-relative-url-3.0.0.tgz#f623c8e26baa5bd3742b3b7ec074f50f3b45b3f3"
@@ -8362,7 +8319,7 @@ isurl@^1.0.0-alpha5:
     has-to-string-tag-x "^1.2.0"
     is-object "^1.0.1"
 
-iterall@^1.2.1, iterall@^1.3.0:
+iterall@^1.3.0:
   version "1.3.0"
   resolved "https://npmregistry.ef.com/iterall/-/iterall-1.3.0.tgz#afcb08492e2915cbd8a0884eb93a8c94d0d72fea"
   integrity sha512-QZ9qOMdF+QLHxy1QIpUHUU1D5pS2CG2P69LF6L6CPjPYA/XMOmKV3PZpawHoAjHNyB0swdVTRxdYT4tbBbxqwg==
@@ -9676,7 +9633,7 @@ ms@2.1.1:
 
 ms@2.1.2:
   version "2.1.2"
-  resolved "https://npmregistry.ef.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
+  resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
 
 ms@^2.1.1:
@@ -9936,7 +9893,7 @@ nprogress@^0.2.0:
   resolved "https://npmregistry.ef.com/nprogress/-/nprogress-0.2.0.tgz#cb8f34c53213d895723fcbab907e9422adbcafb1"
   integrity sha1-y480xTIT2JVyP8urkH6UIq28r7E=
 
-nth-check@^1.0.1, nth-check@^1.0.2:
+nth-check@^1.0.2:
   version "1.0.2"
   resolved "https://npmregistry.ef.com/nth-check/-/nth-check-1.0.2.tgz#b2bd295c37e3dd58a3bf0700376663ba4d9cf05c"
   integrity sha512-WeBOdju8SnzPN5vTUJYxYUxLeXpCaVP5i5e0LF8fg7WORF2Wd7wFX/pk0tYZk7s8T+J7VLy0Da6J1+wCT0AtHg==
@@ -11889,11 +11846,6 @@ remark-stringify@^9.0.0, remark-stringify@^9.0.1:
   dependencies:
     mdast-util-to-markdown "^0.6.0"
 
-remark-sub-super@^1.0.11:
-  version "1.0.20"
-  resolved "https://npmregistry.ef.com/remark-sub-super/-/remark-sub-super-1.0.20.tgz#1e198c2e9e335ce414f23429f7b8eae8fef8e469"
-  integrity sha512-ohnGWuB8FSvod8Qp+gEo/7QRDlI2RA8d+YyY4eLuMQPD3WGwqGMCuyWdNOSW0mzDMqse82PJqeke/GGXaj795A==
-
 remark@^13.0.0:
   version "13.0.0"
   resolved "https://npmregistry.ef.com/remark/-/remark-13.0.0.tgz#d15d9bf71a402f40287ebe36067b66d54868e425"
@@ -12582,9 +12534,9 @@ socket.io-client@3.1.1:
     socket.io-parser "~4.0.4"
 
 socket.io-parser@~4.0.3, socket.io-parser@~4.0.4:
-  version "4.0.4"
-  resolved "https://npmregistry.ef.com/socket.io-parser/-/socket.io-parser-4.0.4.tgz#9ea21b0d61508d18196ef04a2c6b9ab630f4c2b0"
-  integrity sha512-t+b0SS+IxG7Rxzda2EVvyBZbvFPBCjJoyHuE0P//7OAsN23GItzDRdWa6ALxZI/8R5ygK7jAR6t028/z+7295g==
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/socket.io-parser/-/socket.io-parser-4.0.5.tgz#cb404382c32324cc962f27f3a44058cf6e0552df"
+  integrity sha512-sNjbT9dX63nqUFIOv95tTVm6elyIU4RvB1m8dOeZt+IgWwcWklFDOdmGcfo3zSiRsnR/3pJkjY5lfoGqEe4Eig==
   dependencies:
     "@types/component-emitter" "^1.2.10"
     component-emitter "~1.3.0"
@@ -13765,15 +13717,6 @@ unist-util-remove@^2.0.0:
   integrity sha512-J8NYPyBm4baYLdCbjmf1bhPu45Cr1MWTm77qd9istEkzWpnN6O9tMsEbB2JhNnBCqGENRqEWomQ+He6au0B27Q==
   dependencies:
     unist-util-is "^4.0.0"
-
-unist-util-select@^1.5.0:
-  version "1.5.0"
-  resolved "https://npmregistry.ef.com/unist-util-select/-/unist-util-select-1.5.0.tgz#a93c2be8c0f653827803b81331adec2aa24cd933"
-  integrity sha1-qTwr6MD2U4J4A7gTMa3sKqJM2TM=
-  dependencies:
-    css-selector-parser "^1.1.0"
-    debug "^2.2.0"
-    nth-check "^1.0.1"
 
 unist-util-select@^3.0.4:
   version "3.0.4"
